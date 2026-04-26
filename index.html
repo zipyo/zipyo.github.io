@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zipyo</title>
+    <meta name="description" content="zipyo의 GitHub Pages 랜딩 — 진행 중인 사이드 프로젝트 모음.">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="m-CSrh1gi1MJy6UGsdNLCpHsoDrMuKTPUjrc2ODWIYA">
+    <meta name="naver-site-verification" content="bae66268a2242dc7de4ebbc753c8926cc46de24b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap">
+    <style>
+        :root {
+            --navy: #0f1a2e;
+            --amber: #c8923c;
+            --amber-border: rgba(200, 146, 60, 0.25);
+            --warm-white: #faf9f7;
+            --text: #1a1a1a;
+            --text-secondary: #5a6472;
+            --text-light: #8a919b;
+            --border-light: #e8e2d8;
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--sans);
+            background: var(--warm-white);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 24px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 600px; width: 100%; text-align: center; }
+        .brand {
+            font-family: var(--serif);
+            font-size: 2.4em;
+            color: var(--navy);
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        .tag {
+            font-size: 0.86em;
+            color: var(--text-light);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: var(--amber);
+            margin: 0 auto 40px;
+        }
+        .project-list { list-style: none; display: grid; gap: 14px; text-align: left; }
+        .project-card {
+            display: block;
+            padding: 22px 24px;
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            color: var(--text);
+            text-decoration: none;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 3px; height: 100%;
+            background: var(--amber);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .project-card:hover {
+            border-color: var(--amber-border);
+            box-shadow: 0 4px 16px rgba(15, 26, 46, 0.06);
+            transform: translateY(-1px);
+        }
+        .project-card:hover::before { opacity: 1; }
+        .project-name { font-weight: 600; font-size: 1.05em; color: var(--navy); margin-bottom: 4px; }
+        .project-desc { font-size: 0.88em; color: var(--text-secondary); }
+        footer {
+            margin-top: 56px;
+            font-size: 0.82em;
+            color: var(--text-light);
+            text-align: center;
+        }
+        footer a { color: var(--text-secondary); text-decoration: none; }
+        footer a:hover { color: var(--amber); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="brand">zipyo</div>
+        <div class="tag">Side Projects</div>
+        <div class="divider"></div>
+        <ul class="project-list">
+            <li><a class="project-card" href="https://zipyo.github.io/k-berkshire-reports/">
+                <div class="project-name">k-berkshire</div>
+                <div class="project-desc">한국 상장기업의 사업 모델·재무·주주 구조 정리 + 레전드 투자자 페르소나 분석 (정보 제공·교육 목적)</div>
+            </a></li>
+        </ul>
+        <footer>
+            <p>문의 · <a href="mailto:prepretire@gmail.com">prepretire@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
